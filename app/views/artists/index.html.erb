@@ -1,0 +1,9 @@
+h1>Artists Index</h1>
+
+<% @artists.each do |artist| %>
+  <p><%= link_to artist.name, artist_path(artist.id) %></p>
+<% end %>
+
+
+
+<%# <a href="/movies/1"> movie 1 </a> %>
